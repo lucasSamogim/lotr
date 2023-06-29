@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #202022;
+}
+
+header {
+    height: 90px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+li:hover {
+    color: #d8b820;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.banner {
+    background-image: url("https://www.valinor.com.br/forum/media/a-sociedade-do-anel.12267/full?d=1547063493");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 90px);
+}
+
+.trailer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.trailer {
+    width: 40%;
+}
+
+#sinopse {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #FFF;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    background-color: #d8b820;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #FFF;
+    color: #d8b820;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url("https://i.pinimg.com/564x/63/49/ba/6349ba48be76ccd6ccc194a8304dfcc9.jpg");
+}
+
+.banner-2 {
+    background-image: url("https://i.pinimg.com/474x/02/a5/c2/02a5c27f0744be99d4ee5913032a41d6.jpg");
+}
+
+.banner-3 {
+    background-image: url("https://4.bp.blogspot.com/-Hc3jJlwp7kc/UrllQ6RpjcI/AAAAAAAAAkw/MJOEhqhFlc0/s1600/500px-Aragorn.png");
+}
+
+.actor-name {
+    padding: 5px;
+    color: #FFF;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-text {
+    color: #FFF;
+}
+
+.nav-footer {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-link {
+    color: #FFF;
+    transition: .4s;
+}
+
+.my-link:hover {
+    text-decoration: underline;
+}
+
+.my-link:active {
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .nav-footer {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .trailer-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+
+    .banner-1 {
+        background-position: top;
+    }
+
+    .banner-2 {
+        background-position: top;
+    }
+
+    .banner-3 {
+        background-position: top;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .my-link {
+        text-decoration: underline;
+    }
+}

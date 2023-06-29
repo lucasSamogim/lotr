@@ -1,0 +1,59 @@
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#photos-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.photo-card {
+    width: 330px;
+    height: 600px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: bottom;
+    margin: 10px;
+}
+
+.card-1 {
+    background-image: url("https://i.pinimg.com/474x/f8/5e/35/f85e353a700fa5044b1e04ac18bb59b7.jpg");    
+}
+
+.card-2 {
+    background-image: url("https://i.pinimg.com/474x/bf/f3/c2/bff3c2534f5c45fa12fee446520745f3.jpg");    
+}
+
+.card-3 {
+    background-image: url("https://i.pinimg.com/474x/cd/ca/e4/cdcae4d332900004ac42ff1e84d7e804.jpg");    
+}
+
+.card-4 {
+    background-image: url("https://i.pinimg.com/474x/a1/9e/e3/a19ee3e5185d774e30af84df3193b8f6.jpg");    
+}
+
+.card-5 {
+    background-image: url("https://i.pinimg.com/474x/13/08/f6/1308f66b0664025f5570c9b8750e903c.jpg");    
+}
+
+.card-6 {
+    background-image: url("https://i.pinimg.com/474x/94/2d/48/942d489d13d7d7fa2985d21e6f404598.jpg");    
+}
+
+.card-7 {
+    background-image: url("https://i.pinimg.com/474x/aa/77/01/aa7701a30d4aaffa77d3c19a52105bf7.jpg");    
+}
+
+.card-8 {
+    background-image: url("https://i.pinimg.com/474x/0a/d1/b1/0ad1b10939795b7c30d6998f15dece19.jpg");    
+}
